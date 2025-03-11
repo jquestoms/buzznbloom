@@ -1,0 +1,74 @@
+# WordPress core (as of 3.4.1)
+/db-config.php
+/index.php
+/license.txt
+/readme.html
+/wp-activate.php
+/wp-app.php
+/wp-atom.php
+/wp-blog-header.php
+/wp-comments-post.php
+/wp-commentsrss2.php
+/wp-config-sample.php
+/wp-config.php
+/wp-cron.php
+/wp-feed.php
+/wp-links-opml.php
+/wp-load.php
+/wp-login.php
+/wp-mail.php
+/wp-rdf.php
+/wp-rss.php
+/wp-rss2.php
+/wp-pass.php
+/wp-register.php
+/wp-settings.php
+/wp-signup.php
+/wp-trackback.php
+/xmlrpc.php
+/wp-admin
+/wp-includes
+/wp-content/index.php
+/wp-content/themes/twenty*
+/wp-content/upgrade/*
+/wp-content/uploads/*
+/wp-content/plugins/hello.php
+
+# Configuration files
+wp-config.php
+.env
+.htaccess
+
+# Log files
+*.log
+error_log
+access_log
+
+# Cache files
+wp-content/cache/*
+wp-content/advanced-cache.php
+wp-content/wp-cache-config.php
+wp-content/backup-db/*
+wp-content/backups/*
+wp-content/blogs.dir/*
+wp-content/upgrade/*
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# IDE files
+.idea/
+.vscode/
+*.sublime-project
+*.sublime-workspace
+
+# Node modules and build files
+/node_modules
+/build
+/dist 
