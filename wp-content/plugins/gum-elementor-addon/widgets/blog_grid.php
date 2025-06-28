@@ -2579,7 +2579,7 @@ class Gum_Elementor_Widget_blog_grid extends Widget_Base {
         ]
     );
 
-    $this->add_control(
+    $this->add_responsive_control(
       'meta_list_radius',
       [
         'label' => esc_html__( 'Border Radius', 'gum-elementor-addon' ),
@@ -2874,7 +2874,7 @@ class Gum_Elementor_Widget_blog_grid extends Widget_Base {
         ]
     );
 
-    $this->add_control(
+    $this->add_responsive_control(
       'datemeta_radius',
       [
         'label' => esc_html__( 'Border Radius', 'gum-elementor-addon' ),
@@ -3004,7 +3004,7 @@ class Gum_Elementor_Widget_blog_grid extends Widget_Base {
       ]
     );
 
-    $this->add_control(
+    $this->add_responsive_control(
       'author_avatar_radius',
       [
         'label' => esc_html__( 'Border Radius', 'gum-elementor-addon' ),
@@ -3021,37 +3021,7 @@ class Gum_Elementor_Widget_blog_grid extends Widget_Base {
 
       ]
     );
-
-/*
-    $this->add_control(
-      'author_avatar_position',
-      [
-        'label' => esc_html__( 'Position', 'gum-elementor-addon' ),
-        'type' => Controls_Manager::CHOOSE,
-        'options' => [
-          'left' => [
-            'title' => esc_html__( 'Left', 'gum-elementor-addon' ),
-            'icon' => 'eicon-h-align-left',
-          ],
-          'top' => [
-            'title' => esc_html__( 'Top', 'gum-elementor-addon' ),
-            'icon' => 'eicon-v-align-top',
-          ],
-          'right' => [
-            'title' => esc_html__( 'Right', 'gum-elementor-addon' ),
-            'icon' => 'eicon-h-align-right',
-          ],
-        ],
-        'default' => 'left',
-        'prefix_class' => 'author_meta_avatar_position-',
-        'condition' => [
-          'author_meta!' => '',
-          'author_meta_avatar' => 'yes',
-        ],
-      ]
-    );
-*/
-
+    
 
     $this->add_control(
       'author_icon_size',
@@ -3239,7 +3209,7 @@ class Gum_Elementor_Widget_blog_grid extends Widget_Base {
         ]
     );
 
-    $this->add_control(
+    $this->add_responsive_control(
       'authormeta_radius',
       [
         'label' => esc_html__( 'Border Radius', 'gum-elementor-addon' ),
@@ -3462,7 +3432,7 @@ class Gum_Elementor_Widget_blog_grid extends Widget_Base {
         ]
     );
 
-    $this->add_control(
+    $this->add_responsive_control(
       'categorymeta_radius',
       [
         'label' => esc_html__( 'Border Radius', 'gum-elementor-addon' ),
