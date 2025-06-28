@@ -1,0 +1,1 @@
+<div class="pxl-shape <?php echo esc_attr($settings['style']);?>"></div>

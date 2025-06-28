@@ -1,0 +1,116 @@
+.pxl-nutritions-wrapper {
+	padding-top: 25px;
+	margin-top: 23px;
+	border-top: 1px solid $divider_color;
+	width: 100%;
+	.pxl-nutrition-list {
+		@include d-flex();
+		.pxl-nutrition {
+			flex-basis: 50%;
+			color: $heading_color;
+			font-weight: 500;
+			line-height: 35px;
+			letter-spacing: 0.02em;
+			.pxl-nutrition-value {
+				color: $primary_color;
+			}
+		}
+	}
+}
+
+.pxl-shop-layout-3 .pxl-nutritions-wrapper {
+	h3 {
+		font-size: 25px;
+		font-weight: 600;
+		letter-spacing: 0.02em;
+	}
+	.pxl-nutrition {
+		text-transform: uppercase;
+	}
+}
+
+.pxl-shop-layout-4 .pxl-nutritions-wrapper {
+	border-color: $divider_color;
+	h3 {
+		font-size: 20px;
+		font-weight: 400;
+		letter-spacing: 0.03em;
+	}
+	.pxl-nutrition {
+		text-transform: uppercase;
+		font-weight: 600;
+		line-height: 35px;
+		letter-spacing: 0.02em;
+	}
+}
+.pxl-shop-layout-6 .pxl-nutritions-wrapper {
+	h3 {
+		font-size: 25px;
+		font-weight: 600;
+		letter-spacing: 0.02em;
+	}
+	.pxl-nutrition {
+		text-transform: uppercase;
+	}
+}
+
+.pxl-shop-layout-7 .pxl-nutritions-wrapper {
+	h3 {
+		font-size: 25px;
+		font-weight: 600;
+		letter-spacing: 0.02em;
+	}
+	.pxl-nutrition {
+		text-transform: uppercase;
+	}
+}
+.pxl-shop-layout-8 .pxl-nutritions-wrapper {
+	h3 {
+		font-size: 25px;
+		font-weight: 600;
+		letter-spacing: 0.02em;
+	}
+	.pxl-nutrition {
+		text-transform: uppercase;
+	}
+}
+.pxl-shop-layout-9 .pxl-nutritions-wrapper {
+	h3 {
+		font-size: 25px;
+		font-weight: 600;
+		letter-spacing: 0.02em;
+	}
+	.pxl-nutrition {
+		text-transform: uppercase;
+	}
+}
+.pxl-shop-layout-10 .pxl-nutritions-wrapper {
+	h3 {
+		font-size: 25px;
+		font-weight: 600;
+		letter-spacing: 0.02em;
+	}
+	.pxl-nutrition {
+		text-transform: uppercase;
+	}
+}
+.pxl-shop-layout-11 .pxl-nutritions-wrapper {
+	h3 {
+		font-size: 25px;
+		font-weight: 600;
+		letter-spacing: 0.02em;
+	}
+	.pxl-nutrition {
+		text-transform: uppercase;
+	}
+}
+.pxl-shop-layout-12 .pxl-nutritions-wrapper {
+	h3 {
+		font-size: 25px;
+		font-weight: 600;
+		letter-spacing: 0.02em;
+	}
+	.pxl-nutrition {
+		text-transform: uppercase;
+	}
+}
