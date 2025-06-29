@@ -31,7 +31,6 @@
 /wp-content/index.php
 /wp-content/themes/twenty*
 /wp-content/upgrade/*
-/wp-content/uploads/*
 /wp-content/plugins/hello.php
 
 # Configuration files
@@ -71,4 +70,4 @@ Thumbs.db
 # Node modules and build files
 /node_modules
 /build
-/dist 
+/dist /wp-content/uploads/*
