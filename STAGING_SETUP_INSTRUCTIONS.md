@@ -2,6 +2,14 @@
 
 ## 🚀 Complete Setup Guide for buzznbloomstg.wpenginepowered.com
 
+### SSH Access
+```bash
+ssh buzznbloomstg@buzznbloomstg.ssh.wpengine.net
+```
+- Provides command line access to staging server
+- Can run WP-CLI commands for database queries and maintenance
+- See STAGING_SSH_ACCESS.md for detailed usage examples
+
 ### Step 1: Get WP Engine Database Credentials
 
 1. **Log into WP Engine User Portal**
