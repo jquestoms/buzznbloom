@@ -67,3 +67,36 @@ Based on the existing documentation found in the codebase:
 2. All Elementor customizations are visible
 3. No console errors related to missing templates
 4. Site appearance matches local development environment
+
+## Update: Issue Persists After Initial Fix
+The user has applied the initial SQL fix and activated Elementor Pro license, but the issue persists. Need to investigate further and provide additional solutions.
+
+### Additional Investigation Areas:
+1. Check if templates are actually present in the database
+2. Verify theme builder conditions are correctly set
+3. Check for plugin conflicts or missing dependencies
+4. Investigate if there are hardcoded template IDs that don't match
+5. Check if there are additional cache layers on WP Engine
+
+## Advanced Solutions Implemented
+Created three additional resources to resolve persistent issues:
+
+1. **advanced_header_diagnostics_fix.sql** - Comprehensive diagnostic queries and advanced fixes including:
+   - Diagnostic checks to identify the current state
+   - More aggressive cache clearing
+   - Complete theme builder condition reset
+   - Header visibility settings enforcement
+   - Plugin activation verification
+
+2. **MANUAL_HEADER_FIX_STEPS.md** - Step-by-step WordPress admin instructions for:
+   - Verifying Elementor Pro license
+   - Checking and fixing Theme Builder templates
+   - Menu configuration verification
+   - Plugin conflict testing
+   - Last resort template recreation
+
+3. **export_import_header_template.md** - Alternative solution for:
+   - Exporting header template from local site
+   - Importing to staging site
+   - Direct database template migration
+   - Manual recreation guidelines
