@@ -18,6 +18,7 @@ EXPORT_FILE="buzznbloom_complete_safe_export.sql"
 echo "📊 Step 1: Creating export WITHOUT user tables..."
 
 # Export everything EXCEPT user-related tables
+# INCLUDING all custom tables for themes/plugins
 mysqldump \
   --host=$DB_HOST \
   --user=$DB_USER \
@@ -31,6 +32,7 @@ mysqldump \
   --create-options \
   --quick \
   --lock-tables=false \
+  --complete-insert \
   --ignore-table=$DB_NAME.wp_users \
   --ignore-table=$DB_NAME.wp_usermeta \
   $DB_NAME > $EXPORT_FILE
@@ -108,6 +110,8 @@ echo "📋 Step 4: Verifying export includes critical components..."
 TEMPLATE_COUNT=$(grep -c "pxl-template" $EXPORT_FILE)
 ELEMENTOR_COUNT=$(grep -c "elementor" $EXPORT_FILE)
 THEME_MODS_COUNT=$(grep -c "theme_mods" $EXPORT_FILE)
+NAV_MENU_COUNT=$(grep -c "nav_menu" $EXPORT_FILE)
+MENU_ITEM_COUNT=$(grep -c "nav_menu_item" $EXPORT_FILE)
 
 FILE_SIZE=$(du -h $EXPORT_FILE | cut -f1)
 
@@ -121,6 +125,8 @@ echo "📊 Content verification:"
 echo "   • Template references: $TEMPLATE_COUNT"
 echo "   • Elementor references: $ELEMENTOR_COUNT"
 echo "   • Theme mods references: $THEME_MODS_COUNT"
+echo "   • Navigation menus: $NAV_MENU_COUNT"
+echo "   • Menu items: $MENU_ITEM_COUNT"
 echo ""
 echo "🔒 Security:"
 echo "   ✅ User tables: PRESERVED (won't overwrite staging users)"

@@ -70,4 +70,23 @@ Thumbs.db
 # Node modules and build files
 /node_modules
 /build
-/dist /wp-content/uploads/*
+/dist
+/wp-content/uploads/*
+
+# Database dumps
+*.sql
+
+# Archives
+*.zip
+*.tar.gz
+
+# Security sensitive files
+phpinfo.php
+test-permissions.php
+.user.ini
+
+# Personal/temporary downloads
+/download/
+
+# Template files (keep the actual config out)
+!wp-config-staging-template.php
