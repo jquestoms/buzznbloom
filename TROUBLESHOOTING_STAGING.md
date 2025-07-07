@@ -1,5 +1,21 @@
 # WP Engine Staging Troubleshooting Guide
 
+## ⚠️ CRITICAL: Basilico Theme Header Issue (SOLVED!)
+**The Basilico theme uses a custom header system that bypasses Elementor's standard theme builder!**
+
+### Quick Fix for Missing Headers:
+```bash
+# SSH to staging
+ssh buzznbloomstg@buzznbloomstg.ssh.wpengine.net
+cd sites/buzznbloomstg
+
+# Run this CRITICAL command:
+wp eval "\$options = get_option('pxl_theme_options'); \$options['header_layout'] = '17'; update_option('pxl_theme_options', \$options);"
+wp cache flush
+```
+
+**Why this happens**: Basilico theme ignores Elementor theme builder conditions and uses `pxl_theme_options['header_layout']` instead. See SOLUTION_HEADER_ISSUE_1.md for full details.
+
 ## 🚨 CRITICAL: Use the Correct Export Script!
 
 **ALWAYS USE:** `./create_complete_safe_export.sh`
